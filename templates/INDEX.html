@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css\">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a herf="#" class="logo">Cycles</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Review</a>           
+            <a href="#">Featured</a>
+            <a href="contact.html">Contact</a>
+            <a href="{{url_for('login')}}">Login</a>
+        </nav>
+
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Cycle dealing.</h1>
+            <h3>Why Cycle?</h3>
+            <p>A bicycle is a useful vehicle that helps us reach a destination without polluting the environment.<br>
+                 It is composed of steel and has two wheels. In addition, it has got a seat and handle with two pedals and also a bell.<br>
+                  Some bicycles have a carrier while some don’t. It is a popular choice amongst poor people and students. Essay on bicycle will help us
+                  understand its importance.</p>
+               <a href="{{url_for('explore')}}" class="btn">Explore Cycles</a>
+        </div>
+        <div class="home-img">
+            <div class="rhombus">
+                <img src="img/cy2.png" alt="">
+            </div>
+        </div>
+        <div class="rhombus2"></div>
+    </section>
+<div class="section">
+    <div class="section-title">
+        <h3 class="title">bike category</h3>
+        <h3 class="main-title">choose your style</h3>
+    </div>
+    <div class="section-content">
+        <div class="row">
+            <div class="col-4">
+                <div class="category-img">
+                    <div class="category-img-inner" style="background-image: url(img/cy5.jpg);"></div>
+                    <div class="category-title">
+                        Urbun
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category-img">
+                    <div class="category-img-inner" style="background-image: url(img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash.jpg);"></div>
+                    <div class="category-title">
+                        Mountain
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category-img">
+                    <div class="category-img-inner" style="background-image: url(img/tom-austin-3L76b-LMyeI-unsplash.jpg);"></div>
+                    <div class="category-title">
+                        Road
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="section-title">
+        <h3 class="title">New Bikes</h3>
+        <h3 class="main-title">new arrivel</h3>
+    </div>
+    <div class="section-content">
+        <div class="row">
+            <div class="col-5 col-center">
+                <div class="product-card product-card-large">
+                    <a href="#">
+                        <div class="product-card-img">
+                            <img src="img/cy9.png" alt="">
+                        </div>
+                        <h3 class="product-name">
+                            polygon cascade
+                        </h3>
+                        <span class="product-price">
+                            $3,900.00
+                        </span>
+                    </a>
+                    <button class="btn">Add To Cart</button>
+                </div>
+
+            </div>
+            <div class="col-7">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="product-card product-card-large">
+                        <a href="#">
+                            <div class="product-card-img">
+                                <img src="img/cy8.png" alt="">
+                            </div>
+                            <h3 class="product-name">
+                                norco youth bycycle
+                            </h3>
+                            <span class="product-price">
+                                $3,900.00
+                            </span>
+                        </a>
+                        <button class="btn">Add To Cart</button>
+                    </div>
+    
+                  </div>
+                  <div class="col-6">
+                    <div class="product-card product-card-large">
+                        <a href="#">
+                            <div class="product-card-img">
+                                <img src="img/cy10.png" alt="">
+                            </div>
+                            <h3 class="product-name">
+                                mt bromo n7
+                            </h3>
+                            <span class="product-price">
+                                $3,900.00
+                            </span>
+                        </a>
+                        <button class="btn">Add To Cart</button>
+                    </div>
+    
+                  </div>
+                  <div class="col-6">
+                    <div class="product-card product-card-large">
+                        <a href="#">
+                            <div class="product-card-img">
+                                <img src="img/cy7.png" alt="">
+                            </div>
+                            <h3 class="product-name">
+                                haibike xduro rx
+                            </h3>
+                            <span class="product-price">
+                                $3,900.00
+                            </span>
+                        </a>
+                        <button class="btn">Add To Cart</button>
+                    </div>
+    
+                  </div>
+                  <div class="col-6">
+                    <div class="product-card product-card-large">
+                        <a href="#">
+                            <div class="product-card-img">
+                                <img src="img/cy3.png" alt="">
+                            </div>
+                            <h3 class="product-name">
+                                polygon siskiyu
+                            </h3>
+                            <span class="product-price">
+                                $3,900.00
+                            </span>
+                        </a>
+                        <button class="btn">Add To Cart</button>
+                    </div>
+    
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section special-section">
+    <div class="section-title">
+        <h3 class="title">
+            best seller
+        </h3>
+        <h3 class="main-title">xtrada hardtail</h3>
+        <div class="special-price">
+            $1,099.00
+        </div>
+        <a href="" class="btn" >buy now</a>
+    </div>
+    <div class="special-img">
+        <img src="img/cy4.png" alt="">
+    </div>
+
+</div>
+<footer>
+    <div class="section-content">
+        <div class="row">
+            <div class="col-4">
+                <a href="#" class="logo">
+                    <img src="img/" alt="">
+                </a>
+                <p class="footer-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusantium iusto, reiciendis quidem doloremque itaque nisi, 
+                    repudiandae, quaerat ipsum id recusandae eligendi inventore cum facilis esse quasi necessitatibus quae dolores.
+                </p>
+                <ul class="socials">
+                    <li><a href="#"><i class="bx bxl-facebook-circle"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="footer-menu">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

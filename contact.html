@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: aliceblue;
+
+}
+
+.header{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 30px;
+       padding:30px 8%;
+       background: transparent;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       z-index: 100;
+       background-color: rgba(221, 219, 225, 0.338);
+       
+}
+
+.logo{
+    font-size: 25px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0px 20px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: blue;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border:2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+.social-media :hover{
+    border-color: rgb(228, 4, 4);
+}
+.social-media a i{
+    font-size: 24px;
+    color: rgb(208, 18, 18);
+    transform: rotate(-45deg);
+}
+div .heading{
+    margin-top: 4rem;
+    text-align: center;
+    font-size: medium;
+}
+
+.contact .row .map{
+    flex: 1 1 42rem;
+    width: 100%;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            animation: slideInUp 1s ease-in-out;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+.footer{
+    background: lightblue;
+}
+.contac .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+    color: black;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a{
+    color: black;
+    font-size: 1.4rem;
+    display: block;
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    padding-right:.5rem;
+    color: black;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.footer .credit{
+    text-align: center;
+    border-top: #222;
+    padding:1rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a herf="#" class="logo">Cycles</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Review</a>           
+            <a href="#">Featured</a>
+            <a href="#">Contact</a>
+            <a href="{{url_for('login')}}">Login</a>
+        </nav>
+
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+    </header>
+    <div class="contact" id="contact">
+    <h1 class="heading"><span>contact</span>us</h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.354284771597!2d77.32425289999998!3d19.179722200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d6fbe138ad81%3A0x9e88bbe86ec52250!2sMGM&#39;s%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1701171220650!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section>
+            <form id="personalDetailsForm" action="submit_form.php" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-map-marker-alt">india</i></a>
+                <a href="#"><i class="fas fa-map-marker-alt">india</i></a>
+                <a href="#"><i class="fas fa-map-marker-alt">india</i></a>
+                <a href="#"><i class="fas fa-map-marker-alt">india</i></a>
+                 <a href="#"><i class="fas fa-map-marker-alt">india</i></a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-arrow-right">home</i></a>
+                <a href="#"><i class="fas fa-arrow-right">home</i></a>
+                <a href="#"><i class="fas fa-arrow-right">home</i></a>
+                <a href="#"><i class="fas fa-arrow-right">home</i></a>
+                <a href="#"><i class="fas fa-arrow-right">home</i></a>
+                <a href="#"><i class="fas fa-arrow-right">home</i></a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-phone">+123-456-7890</i></a>
+                <a href="#"><i class="fas fa-phone">+123-456-7890</i></a>
+                <a href="#"><i class="fas fa-envelop">om123@gmail.com</i></a>
+                <a href="#"><i class="fas fa-envelop">nanded, india -400104</i></a>
+            </div>
+            <div class="box-container">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-facebook-f">facebook</i></a>
+                <a href="#"><i class="fas fa-facebook-f">facebook</i></a>
+                <a href="#"><i class="fas fa-facebook-f">facebook</i></a>
+                <a href="#"><i class="fas fa-facebook-f">facebook</i></a>
+            </div>
+        </div>
+        <div class="credit">create by mr.yadnyesh pande</div>
+    </section>
+
+
+    
+</body>
+</html>
